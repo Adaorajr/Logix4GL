@@ -1,0 +1,33 @@
+DATABASE FORMONLY
+SCREEN
+{
+
+                           Consulta Funcionário AD
+V.12 R.1 Beta Data: 22/03/2021                                                                     
+------------------------------------------------------------------------------
+
+      Filial: [a      ]
+   Matricula: [b      ]
+         CPF: [c          ] <- Somente números.
+ Funcionário: [d                                     ]
+    Admissão: [e         ]
+    Situacao: [f         ]
+    C. Custo: [g                                     ]
+       Cargo: [h                                     ]
+
+}
+
+END
+
+
+ATTRIBUTES
+
+a = FORMONLY.FILIAL TYPE CHAR, UPSHIFT, WIDGET="FIELD_BMP", CONFIG="combo.bmp Control-z";
+b = FORMONLY.NUMCAD TYPE SMALLINT;
+c = FORMONLY.CPF    TYPE DECIMAL;
+d = FORMONLY.NOMFUN TYPE CHAR, UPSHIFT;
+e = FORMONLY.DATADM TYPE DATE;
+f = FORMONLY.SITAFA TYPE CHAR, WIDGET="FIELD_BMP", CONFIG="combo.bmp Control-z";
+g = FORMONLY.NOMCCU TYPE CHAR;
+h = FORMONLY.TITCAR TYPE CHAR;
+END
