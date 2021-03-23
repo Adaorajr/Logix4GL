@@ -188,7 +188,7 @@ END FUNCTION
         CALL LAV0032_exibir()
     
     ELSE
-      MESSAGE 'Não existem mais dados nessa dir'
+      MESSAGE 'Não existem mais dados nessa direcao!'
       EXIT WHILE
     
     END IF
