@@ -3,7 +3,7 @@ DATABASE LOGIX
 #------------------------------------------------------------#
 # SISTEMA.:                                                  #
 # PROGRAMA: LAV0032                                          #
-# OBJETIVO: Consulta Funcion·rio AD                          #
+# OBJETIVO: Consulta Funcion√°rio AD                          #
 # AUTOR   :                          #
 # DATA    : 26/02/2021                                       #
 #------------------------------------------------------------#
@@ -133,7 +133,7 @@ PREPARE var_query FROM sql_stmt
      CALL LAV0032_exibir()
   ELSE                                      
      LET m_cnsul = FALSE                    
-     CALL LOG0030_MENSAGEM ("Dados n„o Encontrados","!")       
+     CALL LOG0030_MENSAGEM ("Dados n√£o Encontrados","!")       
   END IF
 
  END FUNCTION
@@ -188,7 +188,7 @@ END FUNCTION
         CALL LAV0032_exibir()
     
     ELSE
-      MESSAGE 'N„o existem mais dados nessa direÁ„o1'
+      MESSAGE 'N√£o existem mais dados nessa dir'
       EXIT WHILE
     
     END IF
